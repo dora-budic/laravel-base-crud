@@ -75,7 +75,7 @@ return [
     ],
     [
         "title" => "Batman: The Joker War Zone #1",
-        "description" => "Gotham City is a battleground as The Joker takes over the Wayne fortune and wages a street war against the Dark Knight and his allies! Enter the "war zone" with short stories featuring characters like Cassandra Cain, Stephanie Brown, and Luke Fox and see how they're fighting back in a city under siege! Also, the brutal full debut of the mysterious new anti-hero known as Clownhunter!",
+        "description" => "Gotham City is a battleground as The Joker takes over the Wayne fortune and wages a street war against the Dark Knight and his allies! Enter the 'war zone' with short stories featuring characters like Cassandra Cain, Stephanie Brown, and Luke Fox and see how they're fighting back in a city under siege! Also, the brutal full debut of the mysterious new anti-hero known as Clownhunter!",
         "thumb" => "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/BMTJWZ_01_300-001_HD_5f5ff2307dcb37.34652945.jpg?itok=VswVjLR8",
         "price" => "5.99",
         "series" => "Batman: The Joker War Zone",
@@ -84,7 +84,7 @@ return [
     ],
     [
         "title" => "Batman: Three Jokers #1",
-        "description" => "Thirty years after Batman: The Killing Joke changed comics forever, Three Jokers reexamines the myth of who, or what, The Joker is and what is at the heart of his eternal battle with Batman. New York Times bestselling writer Geoff Johns and Jason Fabok, the writer/artist team that waged the "Darkseid War" in the pages of Justice League, reunite to tell the ultimate story of Batman and The Joker! After years of anticipation starting in DC Universe: Rebirth #1, the epic miniseries you've been waiting for is here: find out why there are three Jokers, and what that means for the Dark Knight and the Clown Prince of Crime. It's a mystery unlike any Batman has ever faced!",
+        "description" => "Thirty years after Batman: The Killing Joke changed comics forever, Three Jokers reexamines the myth of who, or what, The Joker is and what is at the heart of his eternal battle with Batman. New York Times bestselling writer Geoff Johns and Jason Fabok, the writer/artist team that waged the 'Darkseid War' in the pages of Justice League, reunite to tell the ultimate story of Batman and The Joker! After years of anticipation starting in DC Universe: Rebirth #1, the epic miniseries you've been waiting for is here: find out why there are three Jokers, and what that means for the Dark Knight and the Clown Prince of Crime. It's a mystery unlike any Batman has ever faced!",
         "thumb" => "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/08/cover-v2_5f40314645a734.37285065.png?itok=ImNM2QBY",
         "price" => "6.99",
         "series" => "Batman: Three Jokers",
