@@ -31,7 +31,7 @@ header {
 }
 
 .card-container {
-  margin: 30px auto 0;
+  margin: 0 auto;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +50,7 @@ header {
 }
 
 .comic {
-  margin: 30px auto 0;
+  margin: 0 auto;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -63,5 +63,24 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+
+.form {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      font-family: 'Nunito', sans-serif;
+      width: 30%;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    input[type="submit"] {
+      width: 10%;
+    }
   }
 }

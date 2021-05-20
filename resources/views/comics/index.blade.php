@@ -10,7 +10,7 @@
         </div>
         <h3>{{$comic->title}}</h3>
         <h4>{{$comic->series}}</h4>
-        <p>{{$comic->price}}</p>
+        <p>{{$comic->price}}&#36;</p>
       </div>
     </a>
     @endforeach

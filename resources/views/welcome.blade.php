@@ -12,12 +12,23 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
+              background-image: url('/img/bg.jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              color: #fff;
+              font-family: 'Nunito', sans-serif;
+              font-weight: 200;
+              height: 100vh;
+              margin: 0;
+            }
+
+            .overlay {
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0,0,0,0.55);
+              position: absolute;
+              top: 0;
+              left: 0;
             }
 
             .full-height {
@@ -42,6 +53,7 @@
 
             .content {
                 text-align: center;
+                z-index: 1;
             }
 
             .title {
@@ -49,7 +61,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #fff;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -64,28 +76,17 @@
         </style>
     </head>
     <body>
+      <div class="overlay">
+      </div>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    DC Comics
                 </div>
 
                 <div class="links">
                     <a href="{{route('comics.index')}}">Comics</a>
+                    <a href="{{route('comics.create')}}">Create comic</a>
                 </div>
             </div>
         </div>

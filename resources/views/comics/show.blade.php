@@ -8,7 +8,7 @@
     <h4 class="align-center">{{$comic->series}}</h4>
     <p class="my-20">{{$comic->description}}</p>
     <span>Type: {{$comic->type}}</span>
-    <span>Price: {{$comic->price}}</span>
+    <span>Price: {{$comic->price}}&#36;</span>
     <span>Sale date: {{$comic->sale_date}}</span>
   </div>
 @endsection
