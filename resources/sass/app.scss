@@ -1,1 +1,67 @@
-//
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.my-20 {
+  margin: 20px 0;
+}
+
+.align-center {
+  align-self: center;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+
+  a {
+    color: #636b6f;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.card-container {
+  margin: 30px auto 0;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  a {
+    width: calc(100% / 4 - 20px);
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #636b6f;
+
+    .card {
+      text-align: center;
+    }
+  }
+}
+
+.comic {
+  margin: 30px auto 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: #636b6f;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
