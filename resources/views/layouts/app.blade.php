@@ -12,6 +12,7 @@
   <body>
     <header>
       <a href="{{route('home')}}">Home</a>
+      <a href="{{route('comics.create')}}" class="ml-40">Create comic</a>
     </header>
     <main>
       @yield('main')
