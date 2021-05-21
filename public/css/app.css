@@ -20,13 +20,22 @@ body {
   align-self: center;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
+.btn-blue {
   padding: 3px 8px;
   border-radius: 5px;
   background-color: #0182F9;
   font-size: 14px;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 3px 8px;
+  border: 1px solid #0182F9;
+  color: #0182F9;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 header {
@@ -56,11 +65,53 @@ header a {
   color: #636b6f;
   text-align: center;
 }
-.card-container .card a {
+.card-container .card > a {
   text-decoration: none;
   color: #636b6f;
 }
-.card-container .card a.btn {
+.card-container .card .actions {
+  margin-top: 10px;
+}
+.card-container .card .actions a.btn-blue {
+  color: #fff;
+}
+.card-container .card .actions button {
+  height: 26px;
+}
+.card-container .delete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .delete > div {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .delete > div p {
+  margin-bottom: 20px;
+}
+.card-container .delete > div .buttons {
+  display: flex;
+  margin-top: 30px;
+}
+.card-container .delete > div .buttons form {
+  margin-right: 20px;
+}
+.card-container .delete > div .buttons form input {
+  border: 0;
+  outline: 0;
+  height: 26px;
   color: #fff;
 }
 

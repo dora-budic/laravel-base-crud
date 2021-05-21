@@ -2,7 +2,7 @@
 
 @section('main')
   <div class="form">
-    <form class="" action="{{route('comics.update',['comic'=>$comic->id])}}" method="post">
+    <form action="{{route('comics.update',['comic'=>$comic->id])}}" method="post">
       @csrf
       @method('PUT')
       <input type="text" name="title" value="{{$comic->title}}" placeholder="Title">

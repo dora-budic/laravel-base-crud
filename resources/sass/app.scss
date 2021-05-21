@@ -20,13 +20,22 @@ body {
   align-self: center;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
+.btn-blue {
   padding: 3px 8px;
   border-radius: 5px;
   background-color: #0182F9;
   font-size: 14px;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 3px 8px;
+  border: 1px solid #0182F9;
+  color: #0182F9;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 header {
@@ -57,13 +66,61 @@ header {
     color: #636b6f;
     text-align: center;
 
-    a {
+    & > a {
       text-decoration: none;
       color: #636b6f;
     }
 
-    a.btn {
-      color: #fff;
+    .actions {
+      margin-top: 10px;
+
+      a.btn-blue {
+        color: #fff;
+      }
+
+      button {
+        height: 26px;
+      }
+    }
+  }
+
+  .delete {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      .buttons {
+        display: flex;
+        margin-top: 30px;
+        form {
+          margin-right: 20px;
+          input {
+            border: 0;
+            outline: 0;
+            height: 26px;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }

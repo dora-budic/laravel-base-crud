@@ -19380,6 +19380,21 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var index = new Vue({
+  el: '#root',
+  data: {
+    currIndex: null
+  },
+  methods: {
+    deleteForm: function deleteForm(index) {
+      this.currIndex = index;
+    },
+    exit: function exit() {
+      this.currIndex = null;
+    }
+  }
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
