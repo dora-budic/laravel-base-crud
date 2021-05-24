@@ -2,11 +2,21 @@
 
 @section('main')
   <div class="form">
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
+
     <form action="{{route('comics.update',['comic'=>$comic->id])}}" method="post">
       @csrf
       @method('PUT')
       <input type="text" name="title" value="{{$comic->title}}" placeholder="Title">
-      <input type="text" name="description" value="{{$comic->description}}" placeholder="Description">
+      <textarea name="description" rows="8">{{$comic->description}}</textarea>
       <input type="text" name="thumb" value="{{$comic->thumb}}" placeholder="Cover link">
       <input type="text" name="price" value="{{$comic->price}}" placeholder="Price">
       <input type="text" name="series" value="{{$comic->series}}" placeholder="Series">
